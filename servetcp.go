@@ -48,13 +48,13 @@ func (s *Server) accept(listen net.Listener) error {
 }
 
 // ListenTCP starts the Modbus server listening on "address:port".
-func (s *Server) ListenTCP(addressPort string) (err error) {
+func (s *Server) ListenTCP(addressPort string) (net.Addr, error) {
 	listen, err := net.Listen("tcp", addressPort)
 	if err != nil {
 		log.Printf("Failed to Listen: %v\n", err)
-		return err
+		return nil, err
 	}
 	s.listeners = append(s.listeners, listen)
 	go s.accept(listen)
-	return err
+	return listen.Addr(), err
 }

@@ -46,11 +46,20 @@ func TestUnsupportedFunction(t *testing.T) {
 func TestModbus(t *testing.T) {
 	// Server
 	s := NewServer()
-	err := s.ListenTCP("127.0.0.1:3333")
+	addr, err := s.ListenTCP("127.0.0.1:3333")
 	if err != nil {
 		t.Fatalf("failed to listen, got %v\n", err)
 	}
 	defer s.Close()
+
+	if addr.Network() != "tcp" {
+		t.Errorf("wrong network, got %v\n", addr.Network())
+		t.FailNow()
+	}
+	if addr.String() != "127.0.0.1:3333" {
+		t.Errorf("wrong address, got %v\n", addr.String())
+		t.FailNow()
+	}
 
 	// Allow the server to start and to avoid a connection refused on the client
 	time.Sleep(1 * time.Millisecond)

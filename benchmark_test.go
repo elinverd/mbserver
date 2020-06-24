@@ -140,7 +140,7 @@ func BenchmarkModbusRead125HoldingRegisters(b *testing.B) {
 func Example() {
 	// Start the server.
 	serv := NewServer()
-	err := serv.ListenTCP("127.0.0.1:1502")
+	_, err := serv.ListenTCP("127.0.0.1:1502")
 	if err != nil {
 		log.Printf("%v\n", err)
 		return
@@ -204,7 +204,7 @@ func ExampleServer_RegisterFunctionHandler() {
 		})
 
 	// Start the server.
-	err := serv.ListenTCP("localhost:4321")
+	_, err := serv.ListenTCP("localhost:4321")
 	if err != nil {
 		log.Printf("%v\n", err)
 		return
