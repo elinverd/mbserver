@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goburrow/modbus"
-	"github.com/goburrow/serial"
+	"github.com/elinverd/modbus"
+	"github.com/elinverd/serial"
 )
 
 // The serial read and close has a known race condition.

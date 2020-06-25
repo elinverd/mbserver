@@ -4,7 +4,7 @@ import (
 	"io"
 	"log"
 
-	"github.com/goburrow/serial"
+	"github.com/elinverd/serial"
 )
 
 // ListenRTU starts the Modbus server listening to a serial device.

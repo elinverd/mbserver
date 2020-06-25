@@ -1,4 +1,4 @@
-github.com/goburrow/modbus v0.1.0 h1:DejRZY73nEM6+bt5JSP6IsFolJ9dVcqxsYbpLbeW/ro=
-github.com/goburrow/modbus v0.1.0/go.mod h1:Kx552D5rLIS8E7TyUwQ/UdHEqvX5T8tyiGBTlzMcZBg=
-github.com/goburrow/serial v0.1.0 h1:v2T1SQa/dlUqQiYIT8+Cu7YolfqAi3K96UmhwYyuSrA=
-github.com/goburrow/serial v0.1.0/go.mod h1:sAiqG0nRVswsm1C97xsttiYCzSLBmUZ/VSlVLZJ8haA=
+github.com/elinverd/modbus v0.1.1-0.20200625082042-9da10588e642 h1:e39Q+TwV/8zH6VaI4tcSLZC5B7L+Gb2ivc+4qTJTdlE=
+github.com/elinverd/modbus v0.1.1-0.20200625082042-9da10588e642/go.mod h1:gfk4X7So5hyMfRuOliLVVqgJLeDvPJX6aKksAPkqvsU=
+github.com/elinverd/serial v0.1.0 h1:0sI9umJo8e0qvS+h+Ec2fa8pv2hwX0E+mp1EwEau2q0=
+github.com/elinverd/serial v0.1.0/go.mod h1:FDsgyU0pbiT5Y4OdXlmlu8wfUZplxs6b6ZByOq/DCbU=
